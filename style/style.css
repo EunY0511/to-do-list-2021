@@ -1,0 +1,189 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Gamja+Flower&family=Handlee&display=swap");
+
+.hidden {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 300px;
+  font-family: "Gamja Flower", cursive;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-height: 1400px;
+  min-height: 1200px;
+  z-index: -1;
+  filter: brightness(50%);
+  object-fit: cover;
+}
+
+#login-form {
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+}
+
+#login-form input {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 10px;
+  transition: all, 0.5s;
+}
+
+#login-form input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#login-form input:hover::placeholder {
+  color: rgb(50, 50, 50);
+}
+
+#login-form input:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+  background-color: rgba(116, 114, 114, 0);
+}
+
+#login-form button {
+  margin-left: 10px;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgb(80, 80, 80);
+  font-size: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+  transition: all, 0.5s;
+}
+
+#login-form button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#login-form button:active {
+  background-color: darkgray;
+  color: white;
+  outline: none;
+}
+
+#clock {
+  text-align: center;
+  height: 200px;
+  font-size: 9rem;
+  margin: 40px;
+  color: white;
+  font-family: "Handlee", cursive;
+}
+
+#greeting {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+#todo-form {
+  text-align: center;
+  margin-top: 0px;
+}
+
+#todo-form input {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  width: 530px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: -50px;
+  transition: all, 0.4s;
+}
+
+#todo-form input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#todo-form input:hover::placeholder {
+  color: rgb(50, 50, 50);
+}
+
+#todo-form input:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#todo-list {
+  text-align: center;
+}
+
+#todo-list li {
+  list-style: none;
+  color: rgba(250, 250, 250, 0.8);
+  margin: 50px 0px;
+  font-size: 30px;
+  width: 540px;
+  margin: 0 auto;
+}
+
+#todo-list li:hover {
+  color: rgb(24, 109, 95);
+}
+
+#todo-list button {
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  color: white;
+  font-weight: 600;
+  width: 30px;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+}
+
+#todo-list button:hover {
+  cursor: pointer;
+}
+
+#quote {
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  margin-left: 50px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#weather {
+  position: fixed;
+  top: 50px;
+  right: 35px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#weather:hover {
+  color: rgb(255, 166, 0);
+}
